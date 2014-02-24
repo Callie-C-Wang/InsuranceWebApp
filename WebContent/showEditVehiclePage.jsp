@@ -65,7 +65,6 @@
 	<tr>
 		<td colspan="2"><button onclick='editCustomerDetail("${basciInfo.customerNo}")'>Return</button></td>
 	</tr>
-	<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
 </table>
 </form>
 
