@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:javaee="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <javaee:display-name>Insurance Web App</javaee:display-name>
+  <servlet>
+    <servlet-name>queryAllCustomer</servlet-name>
+    <servlet-class>servlet.QueryAllCustomerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>queryAllCustomer</servlet-name>
+    <url-pattern>/QueryAllCustomer.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>editCustomerDetail</servlet-name>
+    <servlet-class>servlet.EditCustomerDetail</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>editCustomerDetail</servlet-name>
+    <url-pattern>/EditCustomerDetail.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>saveCustomerBasic</servlet-name>
+    <servlet-class>servlet.SaveCustomerBasic</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>saveCustomerBasic</servlet-name>
+    <url-pattern>/SaveCustomerBasicInfo.do</url-pattern>
+  </servlet-mapping>  
+  <servlet>
+    <servlet-name>addNewPsn</servlet-name>
+    <servlet-class>servlet.AddNewPsn</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addNewPsn</servlet-name>
+    <url-pattern>/AddNewPerson.do</url-pattern>
+  </servlet-mapping>    
+  <servlet>
+    <servlet-name>addNewCustomerBasic</servlet-name>
+    <servlet-class>servlet.InsertNewCustomerBasic</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addNewCustomerBasic</servlet-name>
+    <url-pattern>/AddNewCustomerBasic.do</url-pattern>
+  </servlet-mapping>
+   
+  <servlet>
+    <servlet-name>addNewVehicle</servlet-name>
+    <servlet-class>servlet.AddNewVehicle</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addNewVehicle</servlet-name>
+    <url-pattern>/AddNewVehicle.do</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>insertNewVehicle</servlet-name>
+    <servlet-class>servlet.InsertNewVehicle</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>insertNewVehicle</servlet-name>
+    <url-pattern>/InsertNewVehicle.do</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>editVehicleDetail</servlet-name>
+    <servlet-class>servlet.EditVehicleDetail</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>editVehicleDetail</servlet-name>
+    <url-pattern>/EditVehicleDetail.do</url-pattern>
+  </servlet-mapping>  
+  <servlet>
+    <servlet-name>saveVehicleDetail</servlet-name>
+    <servlet-class>servlet.SaveVehicleDetail</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>saveVehicleDetail</servlet-name>
+    <url-pattern>/SaveVehicleDetail.do</url-pattern>
+  </servlet-mapping>
+  
+  <resource-ref>
+    <description>DB Connection</description>
+    <res-ref-name>postgresqlDB</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+    <res-auth>Container</res-auth>
+   </resource-ref>
+  
+  <resource-ref>
+    <description>DB Connection</description>
+    <res-ref-name>mysqlDB</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+    <res-auth>Container</res-auth>
+   </resource-ref>
+</web-app>
